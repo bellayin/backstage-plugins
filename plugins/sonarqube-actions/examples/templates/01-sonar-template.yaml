@@ -27,14 +27,12 @@ spec:
           description: Select an authentication method
           oneOf:
             - title: Token
-              required: ['token']
               properties:
                 token:
                   title: Token
                   type: string
                   description: SonarQube auth token
             - title: Username and Password
-              required: ['username', 'password']
               properties:
                 username:
                   title: Username
