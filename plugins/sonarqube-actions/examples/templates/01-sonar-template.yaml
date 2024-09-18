@@ -79,8 +79,8 @@ spec:
         password: ${{ parameters.password }}
         name: ${{ parameters.name }}
         key: ${{ parameters.key }}
-        organization: ${{ parameters.organization }}
         branch: ${{ parameters.branch }}
+        organization: ${{ parameters.organization }}
         visibility: ${{ parameters.visibility }}
   output:
     links:
