@@ -15,6 +15,7 @@ spec:
         - baseUrl
         - name
         - key
+        - organization
       properties:
         baseUrl:
           title: Base URL
@@ -57,6 +58,10 @@ spec:
           title: Branch
           type: string
           description: Project branch
+        organization:
+          title: organization
+          type: string
+          description: Project organization
         visibility:
           title: Visibility
           type: string
@@ -74,6 +79,7 @@ spec:
         password: ${{ parameters.password }}
         name: ${{ parameters.name }}
         key: ${{ parameters.key }}
+        organization: ${{ parameters.organization }}
         branch: ${{ parameters.branch }}
         visibility: ${{ parameters.visibility }}
   output:
